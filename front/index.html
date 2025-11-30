@@ -12,7 +12,11 @@
       <h2>Bienvenue</h2>
       <p>Veuillez vous connecter</p>
     </div>
-    <form action="#" method="POST">
+
+    <!-- conteneur pour afficher messages d'erreur / succès -->
+    <div id="message" class="message" aria-live="polite"></div>
+
+    <form id="loginForm" action="#" method="POST">
       <div class="form-group">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
@@ -27,5 +31,8 @@
       <a href="#">Mot de passe oublié ?</a>
     </div>
   </div>
+
+  <!-- inclusion du script JS -->
+  <script src="script.js"></script>
 </body>
 </html>
